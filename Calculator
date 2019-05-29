@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MathApplication {
 
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         MathApplication start = new MathApplication();
         System.out.println("Enter number: ");
@@ -24,7 +23,6 @@ public class MathApplication {
     }
 
     public double power(double number, int degreeOfNumber) {
-
         double result = 1;
         if (degreeOfNumber < 0) {
             for (int i = degreeOfNumber; i < 0; i++) {
