@@ -12,7 +12,6 @@ public class Rhombus {
         drawRhombus(maxCountAsterisk);
     }
 
-
     public static void drawRhombus(int maxCountAsterisk) {
         int numOfRowsAndColumns = maxCountAsterisk * 2 - 1;
         int countOfAsterisk = 0;
