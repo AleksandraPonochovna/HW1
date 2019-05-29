@@ -1,1 +1,50 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class MathApplication {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        MathApplication start = new MathApplication();
+        System.out.println("Enter number: ");
+        double number = input.nextDouble();
+        System.out.println("Enter degree of number: ");
+        int degreeOfNumber = input.nextInt();
+        System.out.println("Result is: ");
+        if (degreeOfNumber == 2) {
+            number = start.squareOfNumber(number);
+        } else if (degreeOfNumber == 3) {
+            number = start.cubeNumber(number);
+        } else {
+            number = start.power(number, degreeOfNumber);
+        }
+        System.out.println(number);
+    }
+
+    public double power(double number, int degreeOfNumber) {
+
+        double result = 1;
+        if (degreeOfNumber < 0) {
+            for (int i = degreeOfNumber; i < 0; i++) {
+                result *= number;
+            }
+            result = 1 / result;
+        } else {
+            for (int i = 0; i < degreeOfNumber; i++) {
+                result *= number;
+            }
+        }
+        return result;
+    }
+
+    public double squareOfNumber(double number) {
+        return number * number;
+    }
+
+    public double cubeNumber(double number) {
+        return number * number * number;
+    }
+}
 
