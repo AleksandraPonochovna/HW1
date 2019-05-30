@@ -2,11 +2,11 @@ package com.company;
 
 import java.util.Scanner;
 
-public class MatchFootball {
+public class FootballApp {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        MatchFootball start = new MatchFootball();
+        FootballApp start = new FootballAppl();
         int randomFirstNumber = (int) (Math.random() * 10);
         int randomSecondNumber = (int) (Math.random() * 10);
         System.out.println("Guess result first team: ");
