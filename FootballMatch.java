@@ -20,8 +20,9 @@ public class FootballApp {
 
     public int resultMatch(int randomFirstNumber, int randomSecondNumber, int userFirstNumber, int userSecondNumber) {
         return (randomFirstNumber == userFirstNumber && randomSecondNumber == userSecondNumber) ? 2 :
-                (randomFirstNumber > randomSecondNumber && userFirstNumber > userSecondNumber) ||
-                        (randomFirstNumber < randomSecondNumber && userFirstNumber < userSecondNumber) ? 1 : 0;
+                (randomFirstNumber > randomSecondNumber && userFirstNumber > userSecondNumber)
+                        || (randomFirstNumber < randomSecondNumber && userFirstNumber < userSecondNumber)
+                        || (randomFirstNumber == randomSecondNumber && userFirstNumber == userSecondNumber) ? 1 : 0;
     }
 }
 
